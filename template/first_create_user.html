@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>G&eacute;n&eacute;-Arbre | Bienvenue</title>
+		<link rel="stylesheet" type="text/css" href="../css/commun.css">
+		<link rel="stylesheet" type="text/css" href="../css/identification.css">
+		<link rel="stylesheet" type="text/css" href="../css/commun.css">
+
+		<link rel="icon" type="image/png" href="../../image/favicon.png" />
+	</head>
+	<body>
+		<div id="div_identification">
+			<br>
+			<span id="euro">G&eacute;n&eacute;-Arbre</span>
+			<br><br><br>
+			Bienvenue dans G&eacute;n&eacute;-Arbre
+			<br>
+			Merci de cr&eacute;er votre premier compte
+			<br><br><br>
+			<form method="POST" action="./traitement/user.php?fonction=first_create">
+				<table>
+					<tr>
+						<td>
+							Identifiant : 
+						</td>
+						<td>
+							<input type="text" id="txt_login" name="txt_login">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mot de passe : 
+						</td>
+						<td>
+							<input type="password" id="txt_password" name="txt_password">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mail : 
+						</td>
+						<td>
+							<input type="text" id="txt_mail" name="txt_mail">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="submit" value="Cr&eacute;er mon compte">
+						</td>
+					</tr>
+				</table>
+			</form>
+		<div>
+	</body>
+</html>
