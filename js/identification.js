@@ -29,19 +29,11 @@ function connexion(){
 		ajax.post("./traitement/identification.php",function(res){
 			var message = document.getElementById("message");
 			if(res == 'ok'){
-				calcul_automatique_operation();
+				document.location = "index.php";
 			}else{
 				document.getElementById("message").innerHTML = "L'identification a &eacute;chou&eacute;";
 				return false;
 			}
 		},"fonction=connexion&"+recuperation_formulaire(formulaire));
 	}
-}
-
-function calcul_automatique_operation(){
-	document.getElementById("message").innerHTML = "Calcul automatique des op&eacute;rations p&eacute;riodiques...";
-	var url = "./traitement/operation.php";
-    ajax.post(url,function(){
-    	document.location.reload();
-    },"fonction=update_operation");
 }

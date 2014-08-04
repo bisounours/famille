@@ -3,7 +3,6 @@
 		Page à inclure au début de chaque page php servant à l'affichage
 	*/
 	session_start();
-
 	/*
 		Classe permettant de charger automatiquement les classes php nécessaires au traitement 
 		si celles ci ne sont pas encore chargées.
@@ -57,9 +56,11 @@
 	$template->assign("connected_user",$connected_user);
 	$template->assign("message","");
 
-	if(isset($_GET["do"]) && isset($_GET["do"]) == "identification"){
-		$template->draw('identification');
-	}
+	$titre_appli = "G&eacute;n&eacute;Arbre";
 
-	$titre_appli = "G&eacute;n&eacute;-Arbre";
+	if(isset($_GET["do"]) && isset($_GET["do"]) == "identification"){
+		$template->assign("title",$titre_appli);
+		$template->draw('identification');
+		exit;
+	}
 ?>

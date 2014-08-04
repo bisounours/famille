@@ -6,18 +6,19 @@
 /*============================================================*/
 body{
 	font-family: Arial;
+    background: #FFF;
+    color:white;
 }
 
 h1{
-	background:#0174DF;	
-	color: white;
+	color: #333;
+    border-bottom:1px solid #333;
 	font-size: 20px;
 	font-weight: normal;
 	font-family: Arial;
 	margin-top: 0px;
 	text-align: left;
 	padding: 5px;
-	border-radius: 10px;
 	padding-left: 15px;
 	
 }
@@ -117,9 +118,9 @@ input[type=text],input[type=password]{
 }
 
 input[type=button],input[type=submit],button{
-	background-color: #3B170B;
-	border:0px;
-	color: white;
+	background: white;
+    border:1px solid #080;
+	color: #080;
 	font-family: arial;
 	font-size: 16px;
 	border-radius: 2px;
